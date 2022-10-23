@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // Implement the getModifiedArray(array) function,
+    // which takes an arbitrary array, and returns an array
+    // with the value of the first element of the array equal to “Start”,
+    // the last element of the array equal to “End” and the rest of elements
+    // should be the same as in an initial array. The initial array should stay unchanged.
+
+
+    function getModifiedArray(array) {
+        let result = [...array]
+        result.splice(0, 1, 'Start')
+        result.splice(-1, 1, 'End')
+        return result
+    }
+
+
+    const arr = [false, 10, 'mail', true, 20, 30];
+    getModifiedArray(arr)
+    console.log(arr);
+</script>
+</body>
+</html>
